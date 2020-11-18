@@ -1,4 +1,4 @@
-# NeurIPS_2020_L2RPN_Comp
+# A winning approach of NeurIPS_2020_L2RPN_Comp
 This is a repository for L2RPN NeurIPS 2020 Competition Track1-Robustness and Track2-Adaptability during **Aug 2020 - Nov 2020**. Our approach based on this repository is ranked the 3rd in both competition tracks.
 
 https://l2rpn.chalearn.org
