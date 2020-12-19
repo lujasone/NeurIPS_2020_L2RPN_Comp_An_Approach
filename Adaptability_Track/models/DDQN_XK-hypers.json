@@ -1,0 +1,47 @@
+{
+  "lr": 1e-05,
+  "lr_decay_steps": 1024,
+  "lr_decay_rate": 0.5,
+  "batch_size": 32,
+  "stack_frames": 2,
+  "iter": 1048576,
+  "e_start": 0.99,
+  "e_end": 0.001,
+  "e_decay": 131072,
+  "discount": 0.7,
+  "per_alpha": 0.7,
+  "per_beta": 0.5,
+  "per_capacity": 524288,
+  "update_freq": 28,
+  "update_hard": -1,
+  "update_soft": 0.001,
+  "reward": {
+    "name": "MyCombinedScaledReward",
+    "reward_min": -1.0,
+    "reward_max": 1.0,
+    "sbox": {
+      "name": "MySandboxReward",
+      "reward_min": -1.0,
+      "reward_max": 1.0,
+      "weight": 30.0
+    },
+    "overflow": {
+      "name": "MyCloseToOverFlowReward",
+      "reward_min": 0.0,
+      "reward_max": 1.0,
+      "weight": 200.0
+    },
+    "dist": {
+      "name": "MyDistanceReward",
+      "reward_min": 0.0,
+      "reward_max": 1.0,
+      "weight": 20.0
+    },
+    "cap": {
+      "name": "MyNewReward",
+      "reward_min": 0.0,
+      "reward_max": 1.0,
+      "weight": 3.0
+    }
+  }
+}
